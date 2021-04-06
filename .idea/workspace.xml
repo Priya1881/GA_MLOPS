@@ -19,27 +19,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4200e5-b39c-4837-af4c-a51b66f30057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GA_MLOPS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GA_MLOPS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Training_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app1.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/test_processed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dvc.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction_batch_files/outputfiles/predicted_file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_batch_files/outputfiles/predicted_file.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction_service/application_logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction_service/application_logging/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/application_logging/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction_service/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prediction_service/preprocess_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/preprocess_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/preprocess_and_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocess_and_split.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train_and_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_and_evaluate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="cd4200e5-b39c-4837-af4c-a51b66f30057" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
