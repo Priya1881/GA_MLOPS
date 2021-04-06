@@ -6,7 +6,7 @@ import json
 import numpy as np
 from pandas import json_normalize
 from datetime import datetime
-from application_logging.logger import App_Logger
+from Application_Logging.logger import App_Logger
 
 
 def read_params(config_path):

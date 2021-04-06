@@ -4,7 +4,7 @@ import argparse
 import pandas as pd
 import re
 import json
-from application_logging.logger import App_Logger
+from Application_Logging.logger import App_Logger
 
 import numpy as np
 from pandas import json_normalize
@@ -140,8 +140,6 @@ def preprocess_and_split(config_path):
     logger.log(file_object, "Zero standard deviation columns are removed")
 
 
-#
-
 # 7 Function to gather categorical columns in the dataset and performing label encoding
     label_cols = categorical_cols(train_df)
     logger.log(file_object, "Gathering of label _cols in train data completed ")
@@ -160,7 +158,7 @@ def preprocess_and_split(config_path):
 
     logger.log(file_object, "Pageviews column imputed with KNNimputer")
     train_df.to_csv(train_data_path, sep=",", index=False, encoding="utf-8")## Storing Processed train data
-    logger.log(file_object,"Traning data is processed and stored as data/processed/train_processed.csv")
+    logger.log(file_object,"Training data is processed and stored as data/processed/train_processed.csv")
     file_object.close()
 
 

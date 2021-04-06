@@ -1,11 +1,5 @@
-# local package install
--e .
-
-#third party packages install
-dvc
-dvc[gdrive]
-pyyaml
 sklearn
+requests
 xgboost
 pandas
 pytest
@@ -13,4 +7,3 @@ flake8
 tox
 flask
 gunicorn
-mlflow

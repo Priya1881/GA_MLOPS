@@ -8,5 +8,5 @@ class NotAValidFileName(Exception):
 def test_generic():
     filename ='train.csv'
     with pytest.raises(NotAValidFileName):
-        if filename != 'test.csv':
+        if filename != 'test_data.csv':
             raise NotAValidFileName

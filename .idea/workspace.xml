@@ -9,35 +9,36 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4200e5-b39c-4837-af4c-a51b66f30057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dvc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/confusion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/confusion_normalized.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/linear.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/scatter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvc/plots/smooth.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dvcignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GA_MLOPS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GA_MLOPS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Training_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Training_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app1.py" beforeDir="false" afterPath="$PROJECT_DIR$/app1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/test_processed.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dvc.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/dvc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_batch_files/outputfiles/predicted_file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_batch_files/outputfiles/predicted_file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_service/application_logging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_service/application_logging/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/application_logging/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_service/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_service/preprocess_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction_service/preprocess_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/preprocess_and_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/preprocess_and_split.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_and_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_and_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,26 +71,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data_given/" />
-      <recent name="$PROJECT_DIR$/data_given" />
-      <recent name="$PROJECT_DIR$/prediction_service/model" />
-      <recent name="$PROJECT_DIR$/saved_models" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/webapp/templates" />
       <recent name="$PROJECT_DIR$/prediction_service" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/prediction_service" />
+      <recent name="$PROJECT_DIR$/prediction_service/Application_Logging" />
+      <recent name="$PROJECT_DIR$/prediction_service/App_Log" />
+      <recent name="$PROJECT_DIR$/data_given/" />
+      <recent name="$PROJECT_DIR$/data_given" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.app1">
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GA_MLOPS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,8 +198,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app1" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.app1" />
         <item itemvalue="Python.preprocess_and_split" />
         <item itemvalue="Python.get_data" />
         <item itemvalue="Python.template" />
@@ -227,7 +228,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -244,10 +245,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617026681621">
-      <screen x="0" y="25" width="1440" height="809" />
+    <state x="354" y="111" key="#Inspections" timestamp="1617700948986">
+      <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state x="461" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.807@0.25.1440.807" timestamp="1616395746917" />
+    <state x="354" y="111" key="#Inspections/0.25.1440.807@0.25.1440.807" timestamp="1617700948986" />
+    <state x="461" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617717837094">
+      <screen x="0" y="25" width="1440" height="807" />
+    </state>
+    <state x="461" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.807@0.25.1440.807" timestamp="1617717837094" />
     <state x="461" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.809@0.25.1440.809" timestamp="1617026681621" />
     <state x="458" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617695490763">
       <screen x="0" y="25" width="1440" height="807" />
@@ -257,31 +262,31 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="483" y="136" key="#xdebugger.evaluate/0.25.1440.807@0.25.1440.807" timestamp="1616402609780" />
-    <state width="1419" height="151" key="GridCell.Tab.0.bottom" timestamp="1617699545058">
+    <state width="1419" height="190" key="GridCell.Tab.0.bottom" timestamp="1617710719006">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1419" height="151" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1617699545058" />
+    <state width="1419" height="190" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1617710719006" />
     <state width="1419" height="151" key="GridCell.Tab.0.bottom/0.25.1440.809@0.25.1440.809" timestamp="1617698205142" />
     <state width="1419" height="151" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1617299755783" />
     <state width="1419" height="255" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1616520081439" />
-    <state width="1419" height="151" key="GridCell.Tab.0.center" timestamp="1617699545056">
+    <state width="1419" height="190" key="GridCell.Tab.0.center" timestamp="1617710719004">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1419" height="151" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1617699545056" />
+    <state width="1419" height="190" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1617710719004" />
     <state width="1419" height="151" key="GridCell.Tab.0.center/0.25.1440.809@0.25.1440.809" timestamp="1617698205140" />
     <state width="1419" height="151" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1617299755782" />
     <state width="1419" height="255" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1616520081438" />
-    <state width="1419" height="151" key="GridCell.Tab.0.left" timestamp="1617699545055">
+    <state width="1419" height="190" key="GridCell.Tab.0.left" timestamp="1617710719003">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1419" height="151" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1617699545055" />
+    <state width="1419" height="190" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1617710719003" />
     <state width="1419" height="151" key="GridCell.Tab.0.left/0.25.1440.809@0.25.1440.809" timestamp="1617698205139" />
     <state width="1419" height="151" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1617299755781" />
     <state width="1419" height="255" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1616520081437" />
-    <state width="1419" height="151" key="GridCell.Tab.0.right" timestamp="1617699545057">
+    <state width="1419" height="190" key="GridCell.Tab.0.right" timestamp="1617710719005">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state width="1419" height="151" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1617699545057" />
+    <state width="1419" height="190" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1617710719005" />
     <state width="1419" height="151" key="GridCell.Tab.0.right/0.25.1440.809@0.25.1440.809" timestamp="1617698205141" />
     <state width="1419" height="151" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1617299755782" />
     <state width="1419" height="255" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1616520081438" />
@@ -313,10 +318,10 @@
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="308" y="175" key="IDE.errors.dialog/0.25.1440.807@0.25.1440.807" timestamp="1617093950157" />
-    <state x="229" y="64" key="SettingsEditor" timestamp="1617691209773">
+    <state x="229" y="64" key="SettingsEditor" timestamp="1617703493789">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
-    <state x="229" y="64" key="SettingsEditor/0.25.1440.807@0.25.1440.807" timestamp="1617691209773" />
+    <state x="229" y="64" key="SettingsEditor/0.25.1440.807@0.25.1440.807" timestamp="1617703493789" />
     <state x="229" y="64" key="SettingsEditor/0.25.1440.809@0.25.1440.809" timestamp="1616668943999" />
     <state x="229" y="64" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1616670682610" />
     <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1617636554745">

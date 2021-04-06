@@ -16,7 +16,7 @@ def index():
 
                             path = request.files['file']
                             path= path.filename
-
+                            print(path)
                             response = prediction.form_response(path)
                             return render_template("index1.html", response=response)
 

@@ -52,7 +52,7 @@ def predict(path):
 
 
 def validate_input(path):
-    if path != "test.csv":
+    if path != "test_data.csv":
         raise NotAValidFilename
     else:
         return True
