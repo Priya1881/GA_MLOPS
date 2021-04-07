@@ -59,7 +59,6 @@ def train_and_evaluate(config_path):
 
     os.makedirs(model_dir, exist_ok=True)
     model_path = os.path.join(model_dir, "model.pkl")
-    filename = 'xgb_model.pkl'
     pickle.dump(xgb_model, open(model_path, 'wb'))
 
    ##############################

@@ -31,9 +31,12 @@ stages:
     - path: data/raw/train.csv
       md5: 42ba09bd98ff99d78c7fccda918c9e2e
       size: 13334911
+    - path: prediction_service/preprocess_prediction.py
+      md5: d49af4f0de88f422f7bdb57e65f70566
+      size: 7002
     - path: src/preprocess_and_split.py
-      md5: af9b9218e4e99e32eef85b849de8f0b9
-      size: 7178
+      md5: 6650a4ed88ac0b4da0a4a6919d3b0d9c
+      size: 7176
     outs:
     - path: data/processed/train_processed.csv
       md5: f0ef9ae18c7f2963246f5457fb48c92a
@@ -42,11 +45,11 @@ stages:
     cmd: python src/train_and_evaluate.py --config=params.yaml
     deps:
     - path: data/processed/train_processed.csv
-      md5: 42559ec1ea397472300477a732096cc2
-      size: 7406838
+      md5: f0ef9ae18c7f2963246f5457fb48c92a
+      size: 606402
     - path: src/train_and_evaluate.py
-      md5: 839221e77323cba1355e0940f2a7c761
-      size: 3444
+      md5: cb4009c0a998b227acc5d5bac702157c
+      size: 2607
     params:
       params.yaml:
         estimators.XGBoost.learning_rate: 0.5
