@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import os
-
 from prediction_service import prediction
-
-
+from wsgiref import simple_server
 webapp_root = "webapp"
 
 static_dir = os.path.join(webapp_root, "static")
@@ -34,4 +32,9 @@ def index():
         return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0',debug=True)
+    host = '0.0.0.0'
+    # port = 5000
+    httpd = simple_server.make_server(host,app)
+    # print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()

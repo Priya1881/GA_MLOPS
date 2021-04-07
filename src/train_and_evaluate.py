@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from get_data import read_params
 import argparse
 import pickle
-from Application_Logging.logger import App_Logger
+from src.application_logging.logger import App_Logger
 
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
