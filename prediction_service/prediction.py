@@ -3,7 +3,7 @@ import os
 #import json
 import pickle
 import pandas as pd
-from application_logging.logger import App_Logger
+from prediction_service.application_logging.logger import App_Logger
 from prediction_service.preprocess_prediction import preprocessor
 
 params_path = "params.yaml"
