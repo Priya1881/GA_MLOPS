@@ -3,8 +3,8 @@ pyyaml
 requests
 xgboost
 pandas
-pytest
-flake8
-tox
+#pytest
+#flake8
+#tox
 flask
 gunicorn

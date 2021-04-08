@@ -1,6 +1,7 @@
 import yaml
 import os
 #import json
+
 import pickle
 import pandas as pd
 from prediction_service.application_logging.logger import App_Logger
@@ -38,9 +39,11 @@ def predict(path):
     pred_values = pd.DataFrame(prediction,columns=['transactionRevenue(in USD)'])
     pred_values=pred_values.applymap(lambda x:'$'+str(round(x,2)))
     logger.log(file_object,'$ is added in front of transaction values')
-
+    values = pred_values.sort_values(by=['transactionRevenue(in USD)'], ascending=False, ignore_index=True)
+    top_ten_values= values.head(10)
     pred_values.to_csv('prediction_batch_files/outputfiles/predicted_file.csv',index=False)
-    response = 'The predictions are in generated at prediction_bath_files/outputfiles/predicted_file.csv'
+    #response = 'The predictions are in generated at prediction_bath_files/outputfiles/predicted_file.csv'
+    response = 'The Top Ten predictions are ' + str(top_ten_values)
     return (response)
 
 
