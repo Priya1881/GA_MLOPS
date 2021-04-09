@@ -131,9 +131,14 @@
                     <form>
                         <div class="form-group">
                                 <blockquote class="blockquote">
-                                    <p class="mb-2"> Result </p>
+                                    <p class="mb-2"> Result : The top ten Predictions are  </p>
                                 </blockquote>
-                            <p>{{ response }}</p>
+						 <div>
+							{% for table in response %}
+							      {{ table|safe }}
+							{% endfor %}
+						 </div>
+
                         </div>
                     </form>
                 </div>
