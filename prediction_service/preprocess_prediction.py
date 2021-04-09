@@ -138,7 +138,7 @@ def preprocess_and_split(config_path):
 # 7 Function to gather categorical columns in the dataset and performing label encoding
     label_cols = categorical_cols(test_df)
     logger.log(file_object, "Gathering of categorical columns in test data completed ")
-
+    features = test_df
     test_df=label_encoding(test_df,label_cols)
     logger.log(file_object, "Label_encoding in test data completed ")
 
@@ -156,11 +156,12 @@ def preprocess_and_split(config_path):
 
 
 class preprocessor:
-    def __init__(self,path):
+     def __init__(self,path):
         self.path = path
         args = argparse.ArgumentParser()
         args.add_argument("--config", default="params.yaml")
         parsed_args = args.parse_args()
         if self.path == 'test_data.csv':
             preprocess_and_split(config_path=parsed_args.config)
+
 
