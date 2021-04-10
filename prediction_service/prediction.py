@@ -1,7 +1,5 @@
 import yaml
 import os
-
-
 import pickle
 import pandas as pd
 from prediction_service.application_logging.logger import App_Logger
