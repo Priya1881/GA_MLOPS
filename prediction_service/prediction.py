@@ -27,7 +27,8 @@ def read_params(config_path=params_path):
 def predict(path):
     config = read_params(params_path)
     model_dir_path = config["webapp_model_dir"]
-    preprocessor(path)
+    features=preprocessor(path)
+    features = features[['browser','operatingSystem','country','deviceCategory','pageviews']]
     data=pd.read_csv(config['split_data']['test_path'])
     model = pickle.load(open(model_dir_path,'rb'))
     prediction = model.predict(data)
@@ -37,8 +38,11 @@ def predict(path):
 
     pred_values = pd.DataFrame(prediction,columns=['transactionRevenue(in USD)'])
     pred_values=pred_values.applymap(lambda x:'$'+str(round(x,2)))
+    final_df = pd.concat([features,pred_values],axis=1)
+    print(final_df.head())
     logger.log(file_object,'$ is added in front of transaction values')
-    values = pred_values.sort_values(by=['transactionRevenue(in USD)'], ascending=False, ignore_index=True)
+    values = final_df.sort_values(by=['transactionRevenue(in USD)'], ascending=False, ignore_index=True)
+    print(values.head(10))
     pred_values.to_csv('prediction_batch_files/outputfiles/predicted_file.csv',index=False)
     response = values.head(10).to_html()
     return (response)

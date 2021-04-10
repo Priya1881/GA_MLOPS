@@ -111,6 +111,7 @@ def preprocess_and_split(config_path):
 # 2.1 Function for flattening the json columns and merge them with original dataset
     if test_json_columns is not None:
           test_df = json_to_df(test_df, test_json_columns) #Normalizing the json columns in test data
+          features = test_df[['browser','operatingSystem','country','deviceCategory','pageviews']]  # storing features to show on ui screen
           logger.log(file_object, "Normalizing the json columns completed")
 # 3.Dropping columns which have more than 50% of null values and not contributing to the target variable
     test_df = remove_nan_cols(test_df)
@@ -133,12 +134,12 @@ def preprocess_and_split(config_path):
 
 # 6. Removing columns with constant values or with zero standard deviation
     test_df = remove_zero_std_cols(test_df)
+
     logger.log(file_object, "Zero standard deviation columns are removed")
 
 # 7 Function to gather categorical columns in the dataset and performing label encoding
     label_cols = categorical_cols(test_df)
     logger.log(file_object, "Gathering of categorical columns in test data completed ")
-    features = test_df
     test_df=label_encoding(test_df,label_cols)
     logger.log(file_object, "Label_encoding in test data completed ")
 
@@ -153,15 +154,22 @@ def preprocess_and_split(config_path):
     test_df.to_csv(test_data_path, sep=",", index=False, encoding="utf-8") ## storing Processed test data
     logger.log(file_object, "Preprocessing of prediction file completed")
     file_object.close()
+    return features
 
 
-class preprocessor:
-     def __init__(self,path):
-        self.path = path
-        args = argparse.ArgumentParser()
-        args.add_argument("--config", default="params.yaml")
-        parsed_args = args.parse_args()
-        if self.path == 'test_data.csv':
-            preprocess_and_split(config_path=parsed_args.config)
+# class preprocessor:
+#      def __init__(self,path):
+#         self.path = path
+#         args = argparse.ArgumentParser()
+#         args.add_argument("--config", default="params.yaml")
+#         parsed_args = args.parse_args()
+#         if self.path == 'test_data.csv':
+#             preprocess_and_split(config_path=parsed_args.config)
 
-
+def preprocessor(path):
+    args = argparse.ArgumentParser()
+    args.add_argument("--config", default="params.yaml")
+    parsed_args = args.parse_args()
+    if path == 'test_data.csv':
+        features=preprocess_and_split(config_path=parsed_args.config)
+    return features
