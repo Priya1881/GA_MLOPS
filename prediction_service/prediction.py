@@ -26,7 +26,7 @@ def predict(path):
     config = read_params(params_path)
     model_dir_path = config["webapp_model_dir"]
     features=preprocessor(path)
-    features = features[['browser','operatingSystem','country','deviceCategory','pageviews']]
+    #features = features[['fullVisitorId','browser','operatingSystem','country','deviceCategory','pageviews']]
     data=pd.read_csv(config['split_data']['test_path'])
     model = pickle.load(open(model_dir_path,'rb'))
     prediction = model.predict(data)

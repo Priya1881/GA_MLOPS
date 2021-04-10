@@ -111,7 +111,7 @@ def preprocess_and_split(config_path):
 # 2.1 Function for flattening the json columns and merge them with original dataset
     if test_json_columns is not None:
           test_df = json_to_df(test_df, test_json_columns) #Normalizing the json columns in test data
-          features = test_df[['browser','operatingSystem','country','deviceCategory','pageviews']]  # storing features to show on ui screen
+          features = test_df[['fullVisitorId','browser','operatingSystem','country','deviceCategory','pageviews']]  # storing features to show on ui screen
           logger.log(file_object, "Normalizing the json columns completed")
 # 3.Dropping columns which have more than 50% of null values and not contributing to the target variable
     test_df = remove_nan_cols(test_df)
@@ -119,6 +119,7 @@ def preprocess_and_split(config_path):
 
     test_df.drop('sessionId', axis=1,inplace=True)  # Removing this column as  it is the  combination of fullVisitorId and visitId
     test_df.drop('visitStartTime', axis=1, inplace=True) # Removing this column as it is extracted into visitHour
+
     test_df.drop('fullVisitorId', axis=1,inplace=True)  # This column is very long and of no much contribution towards target variable
     drop_columns=['date','visitId','weekday','day','bounces','keyword']
     test_df.drop(drop_columns, axis=1, inplace=True)
