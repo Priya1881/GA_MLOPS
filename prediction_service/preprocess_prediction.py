@@ -1,7 +1,7 @@
 import yaml
 import pandas as pd
 import re
-import argparse
+#import argparse
 import json
 import numpy as np
 from pandas import json_normalize
@@ -167,9 +167,9 @@ def preprocess_and_split(config_path):
 #             preprocess_and_split(config_path=parsed_args.config)
 
 def preprocessor(path):
-    args = argparse.ArgumentParser()
-    args.add_argument("--config", default="params.yaml")
-    parsed_args = args.parse_args()
+    # args = argparse.ArgumentParser()
+    # args.add_argument("--config", default="params.yaml")
+    # parsed_args = args.parse_args()
     if path == 'test_data.csv':
-        features=preprocess_and_split(config_path=parsed_args.config)
+        features=preprocess_and_split(config_path="params.yaml")
     return features
