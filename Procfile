@@ -1,1 +1,1 @@
-web: geunicorn app1:app
+web: gunicorn app1:app
